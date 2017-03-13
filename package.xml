@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Magento_19x_basic_extension</name>
+    <version>1.0.0</version>
+    <stability>devel</stability>
+    <license>LGL</license>
+    <channel>local</channel>
+    <extends/>
+    <summary>Magento 1.9.x basic extension explaining usage of blocks, design, models and tables</summary>
+    <description>Magento 1.9.x basic extension explaining usage of blocks, design, models and tables</description>
+    <notes>Example extension</notes>
+    <authors><author><name>Tofeeq ur Rehman</name><user>Tofeeq</user><email>tofeeq3@gmail.com</email></author></authors>
+    <date>2017-03-13</date>
+    <time>17:05:53</time>
+    <contents><target name="magelocal"><dir name="Tofeeq"><dir name="Files"><dir name="Block"><file name="Example.php" hash="864dfd2b043ee457b578290b823e170c"/><file name="Uploads.php" hash="c109b6fc654e429e765a26fc3659b50c"/></dir><dir name="controllers"><file name="IndexController.php" hash="920ccc624d62ab22943a2744d4c509ea"/></dir><dir name="etc"><file name="config.xml" hash="0e4d355675a4cb48e42829af13cb96fa"/></dir><dir name="Helper"><file name="Data.php" hash="27fc1c145fef670adc51439cf7789ef0"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Uploads"><file name="Collection.php" hash="13dc065088bc6491315b5931a2cba7ca"/></dir><file name="Uploads.php" hash="48ee70f565499b575f308c6a21d71f4a"/></dir><file name="Observer.php" hash="96e020fa5dab7b8f441c393f86394852"/><file name="Uploads.php" hash="12adb069146cd30ddcc52f073ab42b32"/></dir><dir name="sql"><dir name="tofeeq_files_setup"><file name="mysql4-install-1.0.php" hash="6ce106288bf5a1b5ed388c0d1e192993"/><file name="mysql4-upgrade-0.1.1-0.1.2.php" hash="149b6738e22c6f486593314f4352369e"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="tofeeq_files.xml" hash="9332fe7007ce3b9fc447d6ea0aeb3f9e"/></dir><dir name="template"><dir name="tofeeq"><dir name="files"><dir name="block"><file name="example.phtml" hash="404dabd4024b213f3ec9a2b6c3a615f1"/><file name="uploads.phtml" hash="5d6d89583538b5784a100943b5b8e625"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Tofeeq_Files.xml" hash="d52238f012f0fb1a1a52205cc01a8a6a"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="tofeeq"><dir name="files"><dir name="css"><file name="example.css" hash="8ba149b9b5603436acf25be3783fd5f8"/></dir><dir name="js"><file name="example.js" hash="32094c4a4eff04b3fd63edc3fc1c3fe5"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>7.2.0</max></php></required></dependencies>
+</package>

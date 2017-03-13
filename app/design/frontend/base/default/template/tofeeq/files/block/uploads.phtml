@@ -1,0 +1,8 @@
+<div class="uploads">
+	<h2>File Uploads</h2>
+	<?php 
+		foreach ($this->files as $key => $file) {
+			echo '<p><span>' . $file->id . ':</span><span>' . $file->file_name . '</span></p>';
+		}
+	?>
+</div>

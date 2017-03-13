@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tofeeq_Files>
+            <version>1.0</version>
+        </Tofeeq_Files>
+    </modules>
+
+
+    <global>
+        <!-- Tell magento that all blocks realted to this module can be found under this path -->
+        <blocks>
+            <tofeeq_files>
+               <class>Tofeeq_Files_Block</class>
+            </tofeeq_files>
+        </blocks>
+    
+        <models>
+            <tofeeq_files>
+                <!-- Tell magento that all models can be found under this path -->
+                <class>Tofeeq_Files_Model</class>
+                <!-- telling magento about resources of the models can be found in Mysql4 folder -->
+                <resourceModel>tofeeq_files_mysql4</resourceModel>
+            </tofeeq_files>
+            <!-- configure model resources path and tables -->
+            <tofeeq_files_mysql4>
+                <class>Tofeeq_Files_Model_Mysql4</class>
+                <!-- defining tables -->
+                <entities>
+                    <uploads>
+                        <table>tofeeq_files_uploads</table>
+                    </uploads>
+                </entities>
+            </tofeeq_files_mysql4>
+        </models>
+
+        <resources>
+            <tofeeq_files_setup> <!-- this will create an entry in core_resource with tofeeq_files -->
+                <setup>
+                    <module>Tofeeq_Files</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </tofeeq_files_setup>
+            
+            <tofeeq_files_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </tofeeq_files_write>
+            <tofeeq_files_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </tofeeq_files_read>
+        </resources>
+
+    </global>
+
+    <frontend>
+        
+        <routers>
+            <files> <!-- this corresponds to the xml of design while accessing page hooks -->
+                <use>standard</use>
+                <args>
+                    <module>Tofeeq_Files</module>
+                    <frontName>files</frontName> <!-- this corresponds to url -->
+                </args>
+            </files>
+        </routers>
+
+        <layout>
+            <updates>
+                <tofeeq_files>
+                    <file>tofeeq_files.xml</file> <!-- design layout.xml -->
+                </tofeeq_files>
+            </updates>
+        </layout>
+    </frontend>
+
+
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+    <default>
+    	
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>tofeeq/files/css/example.css</name></action>
+            <action method="addItem"><type>skin_js</type><name>tofeeq/files/js/example.js</name></action>           
+        </reference>
+
+        <reference name="content">
+            <block type="tofeeq_files/example" name="tofeeq.files.example" template="tofeeq/files/block/example.phtml" ></block>          
+        </reference>
+
+    </default>
+    <files_index_index translate="label">
+	    <reference name="content">
+	    	<block type="tofeeq_files/uploads" name="tofeeq.files.uploads" template="tofeeq/files/block/uploads.phtml" ></block>
+	    </reference>
+	</files_index_index>
+</layout>
